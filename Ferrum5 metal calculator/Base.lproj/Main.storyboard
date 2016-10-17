@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sMi-U3-chc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="mUQ-Tf-rZW">
+            <objects>
+                <viewController id="Kbt-NL-ohB" customClass="HistoryViewControoler" customModule="Ferrum5_metal_calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9V3-Kj-IgM"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ae0-Q2-7iF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="u0Z-8v-GgV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="VrT-Wp-N6I"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OMq-jy-4SL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-474" y="-14"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="IAw-2f-MDc">
+            <objects>
+                <viewController id="5iV-x8-iir" customClass="MainViewController" customModule="Ferrum5_metal_calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QJF-ay-YXh"/>
+                        <viewControllerLayoutGuide type="bottom" id="evh-7X-EfK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UJU-zN-p7F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ne1-8j-ICv">
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7B1-mK-u0u" customClass="MetalCV" customModule="Ferrum5_metal_calculator" customModuleProvider="target">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TvU-KF-o3y">
+                                            <size key="itemSize" width="333" height="38"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="metalCell" id="agr-cO-wE0" customClass="CvCell" customModule="Ferrum5_metal_calculator" customModuleProvider="target">
+                                                <rect key="frame" x="21" y="0.0" width="333" height="38"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                    <rect key="frame" x="0.0" y="0.0" width="333" height="38"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQ5-ae-4D9">
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </view>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="VQ5-ae-4D9" secondAttribute="trailing" id="HhN-kG-vlA"/>
+                                                    <constraint firstAttribute="bottom" secondItem="VQ5-ae-4D9" secondAttribute="bottom" id="bqz-gi-uVg"/>
+                                                    <constraint firstItem="VQ5-ae-4D9" firstAttribute="leading" secondItem="agr-cO-wE0" secondAttribute="leading" id="ghG-85-qpp"/>
+                                                    <constraint firstItem="VQ5-ae-4D9" firstAttribute="top" secondItem="agr-cO-wE0" secondAttribute="top" id="ueF-o3-n6R"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="title" destination="VQ5-ae-4D9" id="maT-si-qDR"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="7B1-mK-u0u" secondAttribute="trailing" id="8E5-qg-mYR"/>
+                                    <constraint firstAttribute="height" constant="114" id="eBt-0g-4WV"/>
+                                    <constraint firstItem="7B1-mK-u0u" firstAttribute="leading" secondItem="ne1-8j-ICv" secondAttribute="leading" id="gBb-aM-Bhe"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AWk-iK-T9C">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="sgc-3G-hYP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <state key="normal" title="Сталь">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kLO-bX-OTO">
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="o7j-z4-dgE" customClass="MarkCV" customModule="Ferrum5_metal_calculator" customModuleProvider="target">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="114" id="rLS-uh-hNY"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eja-m0-67q">
+                                            <size key="itemSize" width="343" height="38"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="markCell" id="yP3-0B-3NP" customClass="CvCell" customModule="Ferrum5_metal_calculator" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="0.0" width="343" height="38"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="38"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v10-1D-iVx">
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </view>
+                                                <constraints>
+                                                    <constraint firstItem="v10-1D-iVx" firstAttribute="leading" secondItem="yP3-0B-3NP" secondAttribute="leading" id="Lao-sW-8wp"/>
+                                                    <constraint firstItem="v10-1D-iVx" firstAttribute="top" secondItem="yP3-0B-3NP" secondAttribute="top" id="pu3-sb-Kws"/>
+                                                    <constraint firstAttribute="bottom" secondItem="v10-1D-iVx" secondAttribute="bottom" id="qai-tF-GwE"/>
+                                                    <constraint firstAttribute="trailing" secondItem="v10-1D-iVx" secondAttribute="trailing" id="xrS-TW-nyr"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="title" destination="v10-1D-iVx" id="yqr-dK-lju"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="o7j-z4-dgE" secondAttribute="trailing" id="8BP-8K-wRY"/>
+                                    <constraint firstAttribute="bottom" secondItem="o7j-z4-dgE" secondAttribute="bottom" id="BHf-Xa-RnI"/>
+                                    <constraint firstItem="o7j-z4-dgE" firstAttribute="top" secondItem="kLO-bX-OTO" secondAttribute="top" id="SDa-60-hxj"/>
+                                    <constraint firstItem="o7j-z4-dgE" firstAttribute="leading" secondItem="kLO-bX-OTO" secondAttribute="leading" id="m2h-Sq-j0t"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYa-f2-c1D">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="96W-mQ-nqY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <state key="normal" title="40Х">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AK3-e5-7O5" customClass="RolledTypeWheel" customModule="Ferrum5_metal_calculator" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Uym-bS-2V3"/>
+                                    <constraint firstAttribute="height" constant="200" id="lzr-3X-aSQ"/>
+                                </constraints>
+                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="XYo-Mh-8tR">
+                                <segments>
+                                    <segment title="Длина"/>
+                                    <segment title="Вес"/>
+                                </segments>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="changeCalculationMode:" destination="5iV-x8-iir" eventType="valueChanged" id="iFZ-HP-kSu"/>
+                                </connections>
+                            </segmentedControl>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="GZl-vp-NS5">
+                                <frame key="frameInset" minX="16" minY="80" width="165" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="pMI-8E-gkI"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cd-Pj-Sfx">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="MXM-Dd-r69"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <state key="normal" title="Расчитать">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="Calculate:" destination="5iV-x8-iir" eventType="touchUpInside" id="Gcw-ep-Ead"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Метал:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8e5-QK-Lts">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="4dU-uK-7UI"/>
+                                    <constraint firstAttribute="width" constant="165" id="Ea5-3a-3la"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Марка:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7OX-Px-vys">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="SAh-zC-EAc"/>
+                                    <constraint firstAttribute="width" constant="165" id="j6m-LS-CEh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Длина: 0 м" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="umh-N0-IJu">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="WJh-Ku-sc5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Труба" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RM6-aN-sFg">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="pEk-Y7-v9i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="RM6-aN-sFg" secondAttribute="trailing" id="2IW-i0-dd1"/>
+                            <constraint firstItem="7B1-mK-u0u" firstAttribute="top" secondItem="AWk-iK-T9C" secondAttribute="bottom" id="4IP-Pc-A86"/>
+                            <constraint firstItem="8e5-QK-Lts" firstAttribute="centerY" secondItem="AWk-iK-T9C" secondAttribute="centerY" id="Bfo-Oe-0AB"/>
+                            <constraint firstAttribute="trailing" secondItem="kLO-bX-OTO" secondAttribute="trailing" id="FvK-Bh-Zgq"/>
+                            <constraint firstItem="RM6-aN-sFg" firstAttribute="top" secondItem="QJF-ay-YXh" secondAttribute="bottom" constant="70" id="HGx-Ip-RnX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XYo-Mh-8tR" secondAttribute="trailing" id="HbT-rG-P3H"/>
+                            <constraint firstItem="GZl-vp-NS5" firstAttribute="centerY" secondItem="AK3-e5-7O5" secondAttribute="centerY" id="JyJ-Vz-vT8"/>
+                            <constraint firstItem="o7j-z4-dgE" firstAttribute="top" secondItem="eYa-f2-c1D" secondAttribute="bottom" id="Mvc-mo-lGJ"/>
+                            <constraint firstItem="eYa-f2-c1D" firstAttribute="trailing" secondItem="UJU-zN-p7F" secondAttribute="trailingMargin" id="NZO-dR-bTv"/>
+                            <constraint firstItem="AK3-e5-7O5" firstAttribute="top" secondItem="QJF-ay-YXh" secondAttribute="bottom" constant="60" id="QE7-WW-PmF"/>
+                            <constraint firstAttribute="trailing" secondItem="ne1-8j-ICv" secondAttribute="trailing" id="Rtd-zK-b7c"/>
+                            <constraint firstItem="2cd-Pj-Sfx" firstAttribute="leading" secondItem="UJU-zN-p7F" secondAttribute="leadingMargin" id="Sdu-rp-UZC"/>
+                            <constraint firstItem="umh-N0-IJu" firstAttribute="leading" secondItem="UJU-zN-p7F" secondAttribute="leadingMargin" id="TnX-xP-7y6"/>
+                            <constraint firstItem="GZl-vp-NS5" firstAttribute="leading" secondItem="UJU-zN-p7F" secondAttribute="leadingMargin" id="W87-qo-6To"/>
+                            <constraint firstItem="eYa-f2-c1D" firstAttribute="top" secondItem="AWk-iK-T9C" secondAttribute="bottom" constant="16" id="Z6y-eT-6te"/>
+                            <constraint firstItem="evh-7X-EfK" firstAttribute="top" secondItem="2cd-Pj-Sfx" secondAttribute="bottom" constant="30" id="b0D-Pg-zhT"/>
+                            <constraint firstItem="umh-N0-IJu" firstAttribute="top" secondItem="QJF-ay-YXh" secondAttribute="bottom" constant="268" id="fjq-wi-g6F"/>
+                            <constraint firstItem="8e5-QK-Lts" firstAttribute="leading" secondItem="UJU-zN-p7F" secondAttribute="leadingMargin" id="h9Z-eW-2TB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2cd-Pj-Sfx" secondAttribute="trailing" id="hXe-eg-i54"/>
+                            <constraint firstItem="7OX-Px-vys" firstAttribute="centerY" secondItem="eYa-f2-c1D" secondAttribute="centerY" id="iEb-mE-hdT"/>
+                            <constraint firstAttribute="trailing" secondItem="AK3-e5-7O5" secondAttribute="trailing" id="iXT-bM-7qU"/>
+                            <constraint firstItem="AWk-iK-T9C" firstAttribute="leading" secondItem="8e5-QK-Lts" secondAttribute="trailing" id="k5L-9U-pHF"/>
+                            <constraint firstItem="AWk-iK-T9C" firstAttribute="top" secondItem="QJF-ay-YXh" secondAttribute="bottom" constant="330" id="l5V-T4-SMK"/>
+                            <constraint firstItem="AWk-iK-T9C" firstAttribute="trailing" secondItem="UJU-zN-p7F" secondAttribute="trailingMargin" id="myZ-hh-dKJ"/>
+                            <constraint firstItem="eYa-f2-c1D" firstAttribute="leading" secondItem="7OX-Px-vys" secondAttribute="trailing" id="pdD-5b-y7s"/>
+                            <constraint firstItem="XYo-Mh-8tR" firstAttribute="top" secondItem="QJF-ay-YXh" secondAttribute="bottom" constant="8" id="q6t-wa-iVA"/>
+                            <constraint firstItem="7OX-Px-vys" firstAttribute="leading" secondItem="UJU-zN-p7F" secondAttribute="leadingMargin" id="sVf-rY-fk8"/>
+                            <constraint firstItem="ne1-8j-ICv" firstAttribute="leading" secondItem="UJU-zN-p7F" secondAttribute="leading" id="tSn-d7-9Cu"/>
+                            <constraint firstItem="kLO-bX-OTO" firstAttribute="leading" secondItem="UJU-zN-p7F" secondAttribute="leading" id="ter-R4-9qI"/>
+                            <constraint firstItem="XYo-Mh-8tR" firstAttribute="leading" secondItem="UJU-zN-p7F" secondAttribute="leadingMargin" id="ugM-D2-rp3"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="aBg-JK-Olx"/>
+                    <connections>
+                        <outlet property="markBtn" destination="eYa-f2-c1D" id="Q3X-I3-bU8"/>
+                        <outlet property="markCV" destination="o7j-z4-dgE" id="gSL-9n-tn6"/>
+                        <outlet property="markSV" destination="kLO-bX-OTO" id="8eQ-xg-dxX"/>
+                        <outlet property="metalBtn" destination="AWk-iK-T9C" id="fGl-Ly-Rfp"/>
+                        <outlet property="metalCV" destination="7B1-mK-u0u" id="4zt-lj-Oih"/>
+                        <outlet property="metalSV" destination="ne1-8j-ICv" id="4xw-1y-gKF"/>
+                        <outlet property="parametersSV" destination="GZl-vp-NS5" id="FwX-Rt-DDk"/>
+                        <outlet property="resultLabel" destination="umh-N0-IJu" id="NDV-8g-bSl"/>
+                        <outlet property="typeLabel" destination="RM6-aN-sFg" id="W2a-D6-g7N"/>
+                        <outlet property="vSpacingMarkBtn" destination="Z6y-eT-6te" id="7fJ-uD-C6f"/>
+                        <outlet property="wheel" destination="AK3-e5-7O5" id="9D2-w0-r3j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e7V-90-M5f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-474.39999999999998" y="-668.81559220389806"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="uQW-De-f6j">
+            <objects>
+                <tabBarController id="sMi-U3-chc" customClass="TabBarController" customModule="Ferrum5_metal_calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="szs-i5-Pyv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="5iV-x8-iir" kind="relationship" relationship="viewControllers" id="hbt-hm-fo0"/>
+                        <segue destination="Kbt-NL-ohB" kind="relationship" relationship="viewControllers" id="20j-u5-XXN"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8FU-7Y-iw1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1425" y="-341"/>
+        </scene>
+    </scenes>
+</document>

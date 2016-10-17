@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C21349971D973A3600EC18D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21349961D973A3600EC18D8 /* AppDelegate.swift */; };
+		C213499C1D973A3700EC18D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C213499A1D973A3700EC18D8 /* Main.storyboard */; };
+		C213499E1D973A3800EC18D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C213499D1D973A3800EC18D8 /* Assets.xcassets */; };
+		C21349A11D973A3800EC18D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C213499F1D973A3800EC18D8 /* LaunchScreen.storyboard */; };
+		C225D5D81DAD46F900429E6A /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C225D5D71DAD46F900429E6A /* UIViewExtension.swift */; };
+		C225D5FA1DAD4CF600429E6A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C225D5F91DAD4CF600429E6A /* TabBarController.swift */; };
+		C225D5FC1DAD73F000429E6A /* Metal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C225D5FB1DAD73F000429E6A /* Metal.swift */; };
+		C22B31BA1DB3A54D00C73795 /* ChosenMetalDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22B31B91DB3A54D00C73795 /* ChosenMetalDelegate.swift */; };
+		C22B31BC1DB3A68600C73795 /* ParametersStackDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22B31BB1DB3A68600C73795 /* ParametersStackDelegate.swift */; };
+		C22B31C01DB3B1F800C73795 /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22B31BF1DB3B1F800C73795 /* Parameter.swift */; };
+		C22B31C21DB3B92E00C73795 /* ParameterSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22B31C11DB3B92E00C73795 /* ParameterSV.swift */; };
+		C22B31C41DB3C14A00C73795 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22B31C31DB3C14A00C73795 /* Brain.swift */; };
+		C22B31C61DB3C2F600C73795 /* BrainProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22B31C51DB3C2F600C73795 /* BrainProtocol.swift */; };
+		C24A0B151D98300C00C2C006 /* TransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24A0B141D98300C00C2C006 /* TransitionAnimator.swift */; };
+		C24A0B171D98330900C2C006 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24A0B161D98330900C2C006 /* HistoryViewController.swift */; };
+		C2856BF71DAEA9AF00F460E6 /* MetalCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2856BF61DAEA9AF00F460E6 /* MetalCV.swift */; };
+		C28975B81DB11E6B005CAE27 /* RolledTypeWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28975B71DB11E6B005CAE27 /* RolledTypeWheel.swift */; };
+		C28975BB1DB11FF4005CAE27 /* RolledTypeWheelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28975BA1DB11FF4005CAE27 /* RolledTypeWheelProtocol.swift */; };
+		C28975BD1DB120F4005CAE27 /* RolledTypeSector.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28975BC1DB120F4005CAE27 /* RolledTypeSector.swift */; };
+		C2E99A841DAAEE6200D01042 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E99A831DAAEE6200D01042 /* UIViewControllerExtension.swift */; };
+		C2EE47B81DB0F513003A65C9 /* MarkCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE47B71DB0F513003A65C9 /* MarkCV.swift */; };
+		C2EF61CA1DA9AC230028B8C6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EF61C91DA9AC230028B8C6 /* MainViewController.swift */; };
+		C2EF61DC1DAAA13C0028B8C6 /* CvCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EF61DB1DAAA13C0028B8C6 /* CvCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C21349931D973A3500EC18D8 /* Ferrum5 metal calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ferrum5 metal calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C21349961D973A3600EC18D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C213499B1D973A3700EC18D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C213499D1D973A3800EC18D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C21349A01D973A3800EC18D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C21349A21D973A3800EC18D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C225D5D71DAD46F900429E6A /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = Extensions/UIViewExtension.swift; sourceTree = "<group>"; };
+		C225D5F91DAD4CF600429E6A /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = Controller/TabBarController.swift; sourceTree = "<group>"; };
+		C225D5FB1DAD73F000429E6A /* Metal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Metal.swift; path = Model/Metal.swift; sourceTree = "<group>"; };
+		C22B31B91DB3A54D00C73795 /* ChosenMetalDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChosenMetalDelegate.swift; path = Protocols/ChosenMetalDelegate.swift; sourceTree = "<group>"; };
+		C22B31BB1DB3A68600C73795 /* ParametersStackDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParametersStackDelegate.swift; path = Protocols/ParametersStackDelegate.swift; sourceTree = "<group>"; };
+		C22B31BF1DB3B1F800C73795 /* Parameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Parameter.swift; path = Model/Parameter.swift; sourceTree = "<group>"; };
+		C22B31C11DB3B92E00C73795 /* ParameterSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParameterSV.swift; path = View/ParameterSV.swift; sourceTree = "<group>"; };
+		C22B31C31DB3C14A00C73795 /* Brain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Brain.swift; path = Model/Brain.swift; sourceTree = "<group>"; };
+		C22B31C51DB3C2F600C73795 /* BrainProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BrainProtocol.swift; path = Protocols/BrainProtocol.swift; sourceTree = "<group>"; };
+		C24A0B141D98300C00C2C006 /* TransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransitionAnimator.swift; path = Model/TransitionAnimator.swift; sourceTree = "<group>"; };
+		C24A0B161D98330900C2C006 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryViewController.swift; path = Controller/HistoryViewController.swift; sourceTree = "<group>"; };
+		C2856BF61DAEA9AF00F460E6 /* MetalCV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MetalCV.swift; path = View/MetalCV.swift; sourceTree = "<group>"; };
+		C28975B71DB11E6B005CAE27 /* RolledTypeWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RolledTypeWheel.swift; path = View/RolledTypeWheel.swift; sourceTree = "<group>"; };
+		C28975BA1DB11FF4005CAE27 /* RolledTypeWheelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RolledTypeWheelProtocol.swift; path = Protocols/RolledTypeWheelProtocol.swift; sourceTree = "<group>"; };
+		C28975BC1DB120F4005CAE27 /* RolledTypeSector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RolledTypeSector.swift; path = Model/RolledTypeSector.swift; sourceTree = "<group>"; };
+		C2E99A831DAAEE6200D01042 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtension.swift; path = Controller/UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		C2EE47B71DB0F513003A65C9 /* MarkCV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MarkCV.swift; path = View/MarkCV.swift; sourceTree = "<group>"; };
+		C2EF61C91DA9AC230028B8C6 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Controller/MainViewController.swift; sourceTree = "<group>"; };
+		C2EF61DB1DAAA13C0028B8C6 /* CvCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CvCell.swift; path = View/CvCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C21349901D973A3500EC18D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C213498A1D973A3100EC18D8 = {
+			isa = PBXGroup;
+			children = (
+				C21349951D973A3500EC18D8 /* Ferrum5 metal calculator */,
+				C21349941D973A3500EC18D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C21349941D973A3500EC18D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C21349931D973A3500EC18D8 /* Ferrum5 metal calculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C21349951D973A3500EC18D8 /* Ferrum5 metal calculator */ = {
+			isa = PBXGroup;
+			children = (
+				C21349961D973A3600EC18D8 /* AppDelegate.swift */,
+				C28975B91DB11FCF005CAE27 /* Protocols */,
+				C225D5D61DAD46B200429E6A /* Extensions */,
+				C24A0B101D982ED400C2C006 /* Model */,
+				C24A0B111D982EDD00C2C006 /* View */,
+				C24A0B121D982EE300C2C006 /* Controller */,
+				C24A0B131D982F0900C2C006 /* Storyboard */,
+				C213499D1D973A3800EC18D8 /* Assets.xcassets */,
+				C21349A21D973A3800EC18D8 /* Info.plist */,
+			);
+			path = "Ferrum5 metal calculator";
+			sourceTree = "<group>";
+		};
+		C225D5D61DAD46B200429E6A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C225D5D71DAD46F900429E6A /* UIViewExtension.swift */,
+				C2E99A831DAAEE6200D01042 /* UIViewControllerExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		C24A0B101D982ED400C2C006 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C24A0B141D98300C00C2C006 /* TransitionAnimator.swift */,
+				C225D5FB1DAD73F000429E6A /* Metal.swift */,
+				C28975BC1DB120F4005CAE27 /* RolledTypeSector.swift */,
+				C22B31BF1DB3B1F800C73795 /* Parameter.swift */,
+				C22B31C31DB3C14A00C73795 /* Brain.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C24A0B111D982EDD00C2C006 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C2856BF61DAEA9AF00F460E6 /* MetalCV.swift */,
+				C2EE47B71DB0F513003A65C9 /* MarkCV.swift */,
+				C2EF61DB1DAAA13C0028B8C6 /* CvCell.swift */,
+				C28975B71DB11E6B005CAE27 /* RolledTypeWheel.swift */,
+				C22B31C11DB3B92E00C73795 /* ParameterSV.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C24A0B121D982EE300C2C006 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C2EF61C91DA9AC230028B8C6 /* MainViewController.swift */,
+				C24A0B161D98330900C2C006 /* HistoryViewController.swift */,
+				C225D5F91DAD4CF600429E6A /* TabBarController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C24A0B131D982F0900C2C006 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				C213499A1D973A3700EC18D8 /* Main.storyboard */,
+				C213499F1D973A3800EC18D8 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		C28975B91DB11FCF005CAE27 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C28975BA1DB11FF4005CAE27 /* RolledTypeWheelProtocol.swift */,
+				C22B31B91DB3A54D00C73795 /* ChosenMetalDelegate.swift */,
+				C22B31BB1DB3A68600C73795 /* ParametersStackDelegate.swift */,
+				C22B31C51DB3C2F600C73795 /* BrainProtocol.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C21349921D973A3500EC18D8 /* Ferrum5 metal calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C21349A51D973A3800EC18D8 /* Build configuration list for PBXNativeTarget "Ferrum5 metal calculator" */;
+			buildPhases = (
+				C213498F1D973A3500EC18D8 /* Sources */,
+				C21349901D973A3500EC18D8 /* Frameworks */,
+				C21349911D973A3500EC18D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ferrum5 metal calculator";
+			productName = "Ferrum5 metal calculator";
+			productReference = C21349931D973A3500EC18D8 /* Ferrum5 metal calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C213498B1D973A3200EC18D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Maksym Poliakov";
+				TargetAttributes = {
+					C21349921D973A3500EC18D8 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = S9D87L38Y3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C213498E1D973A3200EC18D8 /* Build configuration list for PBXProject "Ferrum5 metal calculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C213498A1D973A3100EC18D8;
+			productRefGroup = C21349941D973A3500EC18D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C21349921D973A3500EC18D8 /* Ferrum5 metal calculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C21349911D973A3500EC18D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C21349A11D973A3800EC18D8 /* LaunchScreen.storyboard in Resources */,
+				C213499E1D973A3800EC18D8 /* Assets.xcassets in Resources */,
+				C213499C1D973A3700EC18D8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C213498F1D973A3500EC18D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C225D5FC1DAD73F000429E6A /* Metal.swift in Sources */,
+				C28975BD1DB120F4005CAE27 /* RolledTypeSector.swift in Sources */,
+				C2856BF71DAEA9AF00F460E6 /* MetalCV.swift in Sources */,
+				C225D5FA1DAD4CF600429E6A /* TabBarController.swift in Sources */,
+				C22B31C41DB3C14A00C73795 /* Brain.swift in Sources */,
+				C22B31BC1DB3A68600C73795 /* ParametersStackDelegate.swift in Sources */,
+				C28975BB1DB11FF4005CAE27 /* RolledTypeWheelProtocol.swift in Sources */,
+				C22B31C61DB3C2F600C73795 /* BrainProtocol.swift in Sources */,
+				C2EF61DC1DAAA13C0028B8C6 /* CvCell.swift in Sources */,
+				C22B31C01DB3B1F800C73795 /* Parameter.swift in Sources */,
+				C24A0B171D98330900C2C006 /* HistoryViewController.swift in Sources */,
+				C2EF61CA1DA9AC230028B8C6 /* MainViewController.swift in Sources */,
+				C2EE47B81DB0F513003A65C9 /* MarkCV.swift in Sources */,
+				C22B31BA1DB3A54D00C73795 /* ChosenMetalDelegate.swift in Sources */,
+				C28975B81DB11E6B005CAE27 /* RolledTypeWheel.swift in Sources */,
+				C225D5D81DAD46F900429E6A /* UIViewExtension.swift in Sources */,
+				C21349971D973A3600EC18D8 /* AppDelegate.swift in Sources */,
+				C22B31C21DB3B92E00C73795 /* ParameterSV.swift in Sources */,
+				C24A0B151D98300C00C2C006 /* TransitionAnimator.swift in Sources */,
+				C2E99A841DAAEE6200D01042 /* UIViewControllerExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C213499A1D973A3700EC18D8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C213499B1D973A3700EC18D8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C213499F1D973A3800EC18D8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C21349A01D973A3800EC18D8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C21349A31D973A3800EC18D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C21349A41D973A3800EC18D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C21349A61D973A3800EC18D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S9D87L38Y3;
+				INFOPLIST_FILE = "Ferrum5 metal calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "maksym-poliakov.Ferrum5-metal-calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C21349A71D973A3800EC18D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S9D87L38Y3;
+				INFOPLIST_FILE = "Ferrum5 metal calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "maksym-poliakov.Ferrum5-metal-calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C213498E1D973A3200EC18D8 /* Build configuration list for PBXProject "Ferrum5 metal calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C21349A31D973A3800EC18D8 /* Debug */,
+				C21349A41D973A3800EC18D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C21349A51D973A3800EC18D8 /* Build configuration list for PBXNativeTarget "Ferrum5 metal calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C21349A61D973A3800EC18D8 /* Debug */,
+				C21349A71D973A3800EC18D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C213498B1D973A3200EC18D8 /* Project object */;
+}
